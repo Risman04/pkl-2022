@@ -45,14 +45,15 @@ Route::get('about/{nama}', function ($nama) {
     return view('about', compact('nama'));
 });
 
-Route::get('about/{nama}', function ($nama) {
-    // return "halaman profile : " .$nama;
-    $calculator = 1 + 5;
-    return view('about', compact('nama', 'calculator'));
-});
+// Route::get('about/{nama}', function ($nama) {
+//     return "halaman profile : " .$nama;
+//     $calculator = 1 + 5;
+//     return view('about', compact('nama', 'calculator'));
+// });
 
 
 //latihan kang candra
+// if blade conditional
 Route::get('pesan/{menu?}', function ($menu = "silahkan masukan pesanan") {
     return view('pages.pesan', compact('menu'));
 });
@@ -60,3 +61,26 @@ Route::get('pesan/{menu?}', function ($menu = "silahkan masukan pesanan") {
 Route::get('pemesanan/{menu1?}/{menu2?}/{menu3?}', function ($menu1 = "silahkan masukan pesanan", $menu2 = null, $menu3 = null) {
     return view('pages.pemesanan', compact('menu1', 'menu2','menu3'));
 });
+
+//controller
+// Route::get('profile', function () {
+//    return view('profile');
+// });
+
+// HTTP VREB
+//GET, POST, PUT/PATCH, DELETE
+
+// 1. Membuat controller
+    // a. NamaController
+// 2. Membuat fungsi fungsi yang ada di controller
+Route::get('hallo', 'LatihanController@hallo');
+Route::get('profile', 'LatihanController@profile');
+Route::get('facebook/{nama}/{jk}/{perkalian}', 'LatihanController@facebook');
+Route::get('siswa', 'LatihanController@siswa');
+Route::get('bmi/{berat}/{tinggi}', 'LatihanController@berat_badan');
+Route::get('mahasiswa', 'LatihanController@mahasiswa');
+Route::get('mahasiswa2', 'LatihanController@mahasiswa2');
+Route::get('kampus', 'LatihanController@kampus');
+Route::get('table', 'LatihanController@table');
+Route::get('belanja', 'LatihanController@belanja');
+// 3. daftarkan controller di web.php

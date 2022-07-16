@@ -81,9 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Nama saya : {{$nama}} <br>
-                    Perkalian : {{$hasilperkalian}} <br>
-                    Jenis kelamin : {{$jk}} <br>
+                    Ini halaman profile
                 </div>
 
                 <div class="links">

@@ -51,15 +51,15 @@
         @if($menu3 == null)
             <strong>{{$menu3}}</strong>
         @elseif($menu3 == 'kecil')         
-            Porsi : <strong>{{$menu3}}</strong><br>
+            Porsi makanan : <strong>{{$menu3}}</strong><br>
             Harga : Rp.2.500
             <hr>
         @elseif($menu3 == 'sedang')
-            Porsi : <strong>{{$menu3}}</strong><br>
+            Porsi makanan: <strong>{{$menu3}}</strong><br>
             Harga : Rp.5.000
             <hr>
         @elseif($menu3 == 'besar')
-            Porsi : <strong>{{$menu3}}</strong><br>
+            Porsi makanan : <strong>{{$menu3}}</strong><br>
             Harga : Rp.10.000
             <hr>
         @else
