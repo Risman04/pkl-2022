@@ -83,4 +83,8 @@ Route::get('mahasiswa2', 'LatihanController@mahasiswa2');
 Route::get('kampus', 'LatihanController@kampus');
 Route::get('table', 'LatihanController@table');
 Route::get('belanja', 'LatihanController@belanja');
+
+//latihan model, migration & seeder
+//route siswa
+Route::get('siswa', 'SiswaController@tampil');
 // 3. daftarkan controller di web.php
